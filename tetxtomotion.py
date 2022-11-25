@@ -1,22 +1,37 @@
-
-def textomotion(string):
+from prueba import *
+def textomotion(robot,string):
 
     a=string.lower().split()
 
     for i in range(len(a)-1):
         if a[i] == "do":
+            move_robot_to_xyz(robot, -27, 0, 90)
+            time.sleep(0.5)
+            move_robot_to_xyz(robot, -27, 36, 90)
 
         elif a[i] == "re":
+            move_robot_to_xyz(robot, -21, 0, 105)
+            move_robot_to_xyz(robot, -21, 26, 105)
 
         elif a[i] == "mi":
+            move_robot_to_xyz(robot, -16, 0, 105)
+            move_robot_to_xyz(robot, -16, 26, 105)
 
         elif a[i] == "fa":
+            move_robot_to_xyz(robot, -11, 0, 105)
+            move_robot_to_xyz(robot, -11, 26, 105)
 
         elif a[i] == "sol":
+            move_robot_to_xyz(robot, -7, 0, 105)
+            move_robot_to_xyz(robot, -7, 26, 105)
 
         elif a[i] == "la":
+            move_robot_to_xyz(robot, -0, 0, 105)
+            move_robot_to_xyz(robot, -0, 26, 105)
 
         elif a[i] == "si":
+            move_robot_to_xyz(robot, 8, 0, 105)
+            move_robot_to_xyz(robot, 0, 26, 105)
 
 # más de una nota a la vez
 def textomotion2(string,lista_movimientos):
