@@ -2,7 +2,7 @@ import speech_recognition as sr
 
 recognizer = sr.Recognizer()
 
-def escuchar():
+def escuchar(a):
     text = 0
     with sr.Microphone() as source:
         print("Adjusting noise ")
@@ -23,7 +23,10 @@ def escuchar():
     except Exception as ex:
 
         print("no se escucho, volviendo a grabar")
-        escuchar()
+        escuchar(a)
+    a=text
+    return a
 
-    return text
-
+string="si"
+a=string.lower().split(" ")
+print(a[0])
