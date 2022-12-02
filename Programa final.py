@@ -9,4 +9,6 @@ Text=escuchar(q)
 r = RobotClient(address="192.168.0.15")
 r.connect()
 #Reconocimiento de nota y movimiento
-textomotion(r,Text)
+while Text!="callado":
+  textomotion(r,Text)
+  Text=escuchar(q)

@@ -26,7 +26,3 @@ def escuchar(a):
         escuchar(a)
     a=text
     return a
-
-string="si"
-a=string.lower().split(" ")
-print(a[0])
